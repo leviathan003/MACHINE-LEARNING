@@ -1,1 +1,1 @@
-###A EDA practice project to gather information from a Sales Churn dataset of a Telecom company to provide possible business suggestions and thoughts
+### A EDA practice project to gather information from a Sales Churn dataset of a Telecom company to provide possible business suggestions and thoughts
