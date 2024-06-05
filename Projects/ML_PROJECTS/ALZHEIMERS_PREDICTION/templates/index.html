@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer’s Disease Predictor</title>
+    <link rel="stylesheet" href="./static/styles.css">
+
+</head>
+<body class="body">
+    <section class="container">
+        <div class="layout">
+          <form class="form-column">
+            <section class="form-card">
+              <header class="form-header">
+                PLEASE FILL THE FOLLOWING FORM WITH THE DATA TO
+                PREDICT IF THE PATIENT HAS ALZHEIMER’S DISEASE OR NOT
+              </header>
+              <div class="form-group-single-age">
+                <label for="age" class="label" aria-label="Age in years">AGE IN YEARS:</label>
+                <input id="age" class="input-single" type="number" aria-label="Age in years" />
+              </div>
+              <div class="form-group-single-gender">
+                <label for="gender" class="label" aria-label="Male/Female">MALE/FEMALE (M/F):</label>
+                <input id="gender" class="input-single" type="text" aria-label="Male/Female (M/F)" />
+              </div>
+              <div class="form-group-single-education">
+                <label for="education" class="label" aria-label="Years of education">YEARS OF EDUCATION:</label>
+                <input id="education" class="input-single" type="number" aria-label="Years of education" />
+              </div>
+              <div class="form-group-single-ses">
+                <label for="socioeconomic" class="label" aria-label="Socio-economic status">SOCIO-ECONOMIC STATUS:</label>
+                <input id="socioeconomic" class="input-single" type="number" aria-label="Socio-economic status" />
+              </div>
+              <div class="form-group-single">
+                <label for="mmse" class="label" aria-label="MMSE">MMSE:</label>
+                <input id="mmse" class="input-single" type="number" aria-label="MMSE" />
+                <label for="cdr" class="label-cdr" aria-label="CDR">CDR:</label>
+                <input id="cdr" class="input-single-cdr" type="number" aria-label="CDR" />
+              </div>
+              <div class="form-group-single">
+                <label for="etiv" class="label" aria-label="eTIV">eTIV:</label>
+                <input id="etiv" class="input-single-etiv" type="number" aria-label="eTIV" />
+                <label for="nwbv" class="label-nwbv" aria-label="nWBV">nWBV:</label>
+                <input id="nwbv" class="input-single" type="number" aria-label="nWBV" />
+              </div>
+              <div class="form-group-single">
+                <label for="asf" class="label" aria-label="ASF">ASF:</label>
+                <input id="asf" class="input-single-asf" type="number" aria-label="ASF" />
+              </div>
+              <button class="button" id="predictButton" type="submit">PREDICT</button>
+            </section>
+          </form>
+          <section class="result-column">
+            <div class="result-card">
+              <div class="result-box">
+                <img id="svgImage" src="./static/assets_doctor/DOC_CLOSED.svg" alt="Doctor">
+              </div>
+              <div>
+                <label for="etiv" class="doc_name_label" aria-label="eTIV">Dr. JUSRA FAPA says:</label>
+              </div>
+              <div class="result-message" id="typewriterText">...</div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <script src="./static/script.js"></script>
+</body>
+</html>
