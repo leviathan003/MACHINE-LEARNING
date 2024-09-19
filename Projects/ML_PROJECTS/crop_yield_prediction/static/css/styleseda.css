@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+}
+
+.eda-page {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 22px;
+}
+
+@media (max-width: 991px) {
+    .main-container {
+        max-width: 100%;
+    }
+}
+
+.background-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-section {
+    position: relative;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    padding: 34px 70px;
+    font: 500 25px JetBrains Mono, sans-serif;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .nav-section {
+        max-width: 100%;
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 55px;
+}
+
+@media (max-width: 991px) {
+    .nav-items {
+        white-space: initial;
+    }
+}
+
+.nav-item {
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.nav-item-active {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.insights-container {
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(30, 31, 38, 0.76);
+    align-self: center;
+    display: flex;
+    width: 100%;
+    max-width: 1650px;
+    flex-direction: column;
+    padding: 18px 7px;
+    overflow-y: auto; 
+    max-height: 720px; 
+}
+
+.insights-container::-webkit-scrollbar {
+    width: 3px; 
+}
+    
+.insights-container::-webkit-scrollbar-track {
+background: transparent;
+border-radius: 3px; 
+}
+
+.insights-container::-webkit-scrollbar-thumb {
+background-color: #3d3e4d; 
+border-radius: 10px; 
+border: 0px solid #f1f1f1; 
+}
+
+@media (max-width: 991px) {
+    .insights-container {
+        max-width: 100%;
+    }
+}
+
+.insights-text {
+    color: #fff;
+    margin: 0 60px 0 22px;
+    font: 400 24px/36px JetBrains Mono, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .insights-text {
+        max-width: 100%;
+        margin-right: 10px;
+    }
+}
+
+.charts-container {
+    margin-top: 31px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+@media (max-width: 991px) {
+    .charts-container {
+        max-width: 100%;
+    }
+}
+
+.charts-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+    .charts-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+}
+
+.chart-column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .chart-column {
+        width: 100%;
+    }
+}
+
+.chart-image {
+    width: 100%;
+    margin-left: 80px;
+    height: auto; /* Ensure images are not shortened */
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+@media (max-width: 991px) {
+    .chart-image {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+#hash-chart{
+    align-self: flex-start;
+    width: 1300px;
+}
+
+#hash-chart2{
+    align-self: flex-start;
+    width: 1000px;
+}
+
+#spacer{
+    margin-top: 20px;
+}
+
+#table{
+    max-height: 700px;
+}
+
+.dataframe tbody tr th:only-of-type {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.dataframe tbody tr th td{
+    text-align: center;
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: center;
+    color: white;
+}
+
+.dataframe td{
+    text-align: center;
+    color: white;
+}
+

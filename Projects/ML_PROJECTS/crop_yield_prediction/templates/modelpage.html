@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="../static/css/stylesmodel.css"/>
+</head>
+<body>
+    <section class="yield-prediction-page">
+        <div class="main-container">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b337627b4f1a3802327717098d691f8ec42fff16ee32b313522c658621e111fd?placeholderIfAbsent=true&apiKey=3b2a7142125141cc827fb1ead6ce9c1a" class="background-image" alt="" />
+        <nav class="navigation">
+            <ul class="nav-items">
+                <li><a href="/" class="nav-link">HOME</a></li>
+                <li><a href="/dataset" class="nav-link">DATASET</a></li>
+                <li><a href="/eda" class="nav-link">EDA</a></li>
+                <li><a href="/model" class="nav-link nav-link-active">MODEL</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper">
+            <div class="content-container">
+            <div class="input-column">
+                <form class="input-form">
+                <h2 class="form-title">ENTER DATA TO PREDICT YIELD</h2>
+                <div class="form-content">
+                    <div class="form-row">
+                    <div class="label-column">
+                        <div class="label-container">
+                        <label for="clonesize" class="form-label">CLONESIZE:</label>
+                        <label for="honeybee" class="form-label">HONEYBEE:</label>
+                        <label for="bumbles" class="form-label">BUMBLES:</label>
+                        <label for="andrena" class="form-label">ANDRENA:</label>
+                        <label for="osmia" class="form-label">OSMIA:</label>
+                        <label for="maxUpperTRange" class="form-label">MAX OF UPPER T RANGE:</label>
+                        <label for="minUpperTRange" class="form-label">MIN OF UPPER T RANGE:</label>
+                        <label for="maxLowerTRange" class="form-label">MAX OF LOWER T RANGE:</label>
+                        <label for="minLowerTRange" class="form-label">MIN OF LOWER T RANGE:</label>
+                        <label for="avgRainingDays" class="form-label">AVERAGE RAINING DAYS:</label>
+                        </div>
+                    </div>
+                    <div class="input-column">
+                        <div class="input-container">
+                        <input id="clonesize" class="form-input" type="text" aria-label="Clone size" />
+                        <input id="honeybee" class="form-input" type="text" aria-label="Honeybee" />
+                        <input id="bumbles" class="form-input" type="text" aria-label="bumbles" />
+                        <input id="andrena" class="form-input" type="text" aria-label="Andrena" />
+                        <input id="osmia" class="form-input" type="text" aria-label="Osmia" />
+                        <input id="maxUpperTRange" class="form-input" type="text" aria-label="Max of upper T range" />
+                        <input id="minUpperTRange" class="form-input" type="text" aria-label="Min of upper T range" />
+                        <input id="maxLowerTRange" class="form-input" type="text" aria-label="Max of lower T range" />
+                        <input id="minLowerTRange" class="form-input" type="text" aria-label="Min of lower T range" />
+                        <input id="avgRainingDays" class="form-input" type="text" aria-label="Average raining days" />
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button type="submit" class="predict-button">PREDICT YIELD</button>
+                </form>
+            </div>
+            <div class="output-column">
+                <div class="output-container">
+                <div class="image-wrapper">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/15b1216d1cdaa2e2b10e975227ea2b227ef2f3c93f48e7ba48dba4f0aa3cd1c4?placeholderIfAbsent=true&apiKey=3b2a7142125141cc827fb1ead6ce9c1a" class="output-image" alt="Yield prediction graph" />
+                </div>
+                <p class="prediction-result">Predicted yield<br><br><a class="result-value" id="result-value">0.0</a></p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="../static/js/modelScript.js"></script>
+</body>
+</html>
