@@ -1,144 +1,151 @@
-body{
+body {
     margin: 0px;
 }
 .home-page {
-background-color: #fff;
-display: flex;
-flex-direction: column;
-overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .hero-section {
-display: flex;
-flex-direction: column;
-position: relative;
-min-height: 720px;
-width: 100%;
-padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 720px;
+    width: 100%;
+    padding-bottom: 32px;
 }
 
 .hero-background {
-position: absolute;
-inset: 0;
-height: 100%;
-width: 100%;
-object-fit: cover;
-object-position: center;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .navigation {
-position: relative;
-z-index: 10;
-display: flex;
-width: 90%;
-justify-content: flex-end;
-padding: 34px 70px;
-font: 500 25px JetBrains Mono, sans-serif;
-color: #fff;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    padding: 34px 70px;
+    font:
+        500 25px JetBrains Mono,
+        sans-serif;
+    color: #fff;
 }
 
 .nav-items {
-display: flex;
-list-style-type: none;
-align-items: center;
-gap: 55px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 55px;
 }
 
-a{
-    color:white;
+a {
+    color: white;
     text-decoration: none;
 }
 
 .nav-item {
-margin: auto 0;
+    margin: auto 0;
 }
 
 .nav-item-active {
-font-size: 28px;
-font-weight: 700;
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .content-section {
-position: relative;
-border-radius: 10px;
-background-color: rgba(30, 31, 38, 0.76);
-align-self: center;
-margin-top: -10px;
-width: 1300px;
-max-width: 90%;
-padding: 27px 49px 27px 20px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(30, 31, 38, 0.76);
+    align-self: center;
+    margin-top: -10px;
+    max-height: 410px;
+    width: 1200px;
+    max-width: 90%;
+    padding: 27px 49px 27px 20px;
+    padding-top: 10px;
 }
 
 .content-wrapper {
-display: flex;
-gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .text-column {
-width: 65%;
+    width: 65%;
 }
 
 .project-description {
-color: #fff;
-font: 400 29px JetBrains Mono, sans-serif;
+    color: #fff;
+    font:
+        400 25px JetBrains Mono,
+        sans-serif;
 }
 
 .image-column {
-width: 35%;
+    width: 35%;
 }
 
 .project-image {
-aspect-ratio: 0.85;
-object-fit: contain;
-object-position: center;
-width: 100%;
-border-radius: 10px;
+    aspect-ratio: 0.85;
+    object-fit: contain;
+    padding-top: 20px;
+    margin-left: 60px;
+    object-position: center;
+    width: 80%;
+    border-radius: 10px;
 }
 
 @media (max-width: 991px) {
-.hero-section {
-    max-width: 100%;
-}
+    .hero-section {
+        max-width: 100%;
+    }
 
-.navigation {
-    max-width: 100%;
-    padding: 0 20px;
-}
+    .navigation {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
-.content-section {
-    padding-right: 20px;
-}
+    .content-section {
+        padding-right: 20px;
+    }
 
-.content-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-}
+    .content-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
 
-.text-column,
-.image-column {
-    width: 100%;
-}
+    .text-column,
+    .image-column {
+        width: 100%;
+    }
 
-.project-description {
-    max-width: 100%;
-    margin-top: 40px;
-}
+    .project-description {
+        max-width: 100%;
+        margin-top: 40px;
+    }
 
-.project-image {
-    margin-top: 40px;
-}
+    .project-image {
+        margin-top: 40px;
+    }
 }
 
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-white-space: nowrap;
-border: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
-

@@ -39,7 +39,9 @@ body {
     width: 90%;
     justify-content: flex-end;
     padding: 34px 70px;
-    font: 500 25px JetBrains Mono, sans-serif;
+    font:
+        500 25px JetBrains Mono,
+        sans-serif;
     color: #fff;
 }
 
@@ -86,26 +88,26 @@ a {
     align-self: center;
     display: flex;
     width: 100%;
-    max-width: 1650px;
+    max-width: 1325px;
     flex-direction: column;
     padding: 18px 7px;
-    overflow-y: auto; 
-    max-height: 720px; 
+    overflow-y: auto;
+    max-height: 423px;
 }
 
 .insights-container::-webkit-scrollbar {
-    width: 3px; 
+    width: 3px;
 }
-    
+
 .insights-container::-webkit-scrollbar-track {
-background: transparent;
-border-radius: 3px; 
+    background: transparent;
+    border-radius: 3px;
 }
 
 .insights-container::-webkit-scrollbar-thumb {
-background-color: #3d3e4d; 
-border-radius: 10px; 
-border: 0px solid #f1f1f1; 
+    background-color: #3d3e4d;
+    border-radius: 10px;
+    border: 0px solid #f1f1f1;
 }
 
 @media (max-width: 991px) {
@@ -117,7 +119,12 @@ border: 0px solid #f1f1f1;
 .insights-text {
     color: #fff;
     margin: 0 60px 0 22px;
-    font: 400 24px/36px JetBrains Mono, -apple-system, Roboto, Helvetica, sans-serif;
+    font:
+        400 24px JetBrains Mono,
+        -apple-system,
+        Roboto,
+        Helvetica,
+        sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -170,7 +177,7 @@ border: 0px solid #f1f1f1;
 }
 
 .chart-image {
-    width: 100%;
+    width: 70%;
     margin-left: 80px;
     height: auto; /* Ensure images are not shortened */
     object-fit: contain;
@@ -179,7 +186,7 @@ border: 0px solid #f1f1f1;
 
 @media (max-width: 991px) {
     .chart-image {
-        max-width: 100%;
+        max-width: 70%;
         margin-top: 10px;
     }
 }
@@ -196,21 +203,21 @@ border: 0px solid #f1f1f1;
     border: 0;
 }
 
-#hash-chart{
-    align-self: flex-start;
-    width: 1300px;
-}
-
-#hash-chart2{
+#hash-chart {
     align-self: flex-start;
     width: 1000px;
 }
 
-#spacer{
+#hash-chart2 {
+    align-self: flex-start;
+    width: 1000px;
+}
+
+#spacer {
     margin-top: 20px;
 }
 
-#table{
+#table {
     max-height: 700px;
 }
 
@@ -220,18 +227,19 @@ border: 0px solid #f1f1f1;
     color: white;
 }
 
-.dataframe tbody tr th td{
+.dataframe tbody tr th td {
     text-align: center;
     vertical-align: top;
 }
 
 .dataframe thead th {
     text-align: center;
+    font-size: 15px;
     color: white;
 }
 
-.dataframe td{
+.dataframe td {
     text-align: center;
+    font-size: 14px;
     color: white;
 }
-
