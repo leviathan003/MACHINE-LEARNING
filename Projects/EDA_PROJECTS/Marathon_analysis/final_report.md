@@ -1,10 +1,8 @@
 ***
-***
 <p align="center" style="font-size:30px;">
     <b>Final Report</b>
 </p>
-***
-*** 
+
 - From after 1960 the number of marathons each year has incearsed leading to exponential increase from after the year 2000
 - USA has the highest number of races followed by FRA, GER, GBR and ITA
 ***
@@ -92,5 +90,3 @@ Race : Highest Age-wise Gender Distribution (Male/Female)
 - 100 km del Passatore, Firenze-Faenza (ITA): <25 to 55 yrs (highest <25yrs)
 - Cortina Trail (ITA): <25 to 50 yrs (highest <25yrs)
 - Lavaredo Ultra Trail (ITA): <25 to 50 yrs (highest 36-40yrs)
-***
-***
